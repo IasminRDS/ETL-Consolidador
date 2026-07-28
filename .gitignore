@@ -11,3 +11,10 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+
+# Segredos — nunca versionar
+.env
+.env.*
+!.env.exemplo
+*.key
+*.pem
