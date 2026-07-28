@@ -1,0 +1,19 @@
+RELATORIO DE QUALIDADE — ETL Consolidador
+Gerado em 22/07/2026 21:42
+
+Arquivos lidos .............. 4
+Linhas brutas ............... 112
+Linhas vazias descartadas ... 0
+Linhas de total/rodape ...... 1
+Linhas duplicadas removidas . 6
+Linhas na base final ........ 105
+Linhas marcadas p/ revisao .. 0
+
+Colunas da base final:
+  origem, data, documento, produto, codigo, categoria, quantidade, valor_unitario, valor_total, vendedor, ano, mes, revisar
+
+Soma de valor_total ......... R$ 22.632,70
+
+Ocorrencias:
+  - anotacoes do gerente.csv: ignorado — colunas vistas: ['Observacao', 'Responsavel']
+  - VENDAS-JULHO_final_v3.csv: colunas ignoradas (sem mapeamento) -> ['OBS']
