@@ -81,7 +81,13 @@ esperado é **105 linhas** e **R$ 22.632,70** — os mesmos números que o
 Para rodar sozinho toda segunda-feira às 7h, agende no Windows:
 
 ```bash
-schtasks /create /tn "ETL Cliente" /tr "python \"E:\mais projetos\negocio-bi\02-etl-consolidador\etl_consolidador.py\"" /sc weekly /d MON /st 07:00
+schtasks /create /tn "ETL Cliente" /tr "python \"C:\caminho\ate\o\projeto\etl_consolidador.py\"" /sc weekly /d MON /st 07:00
 ```
 
+Troque `C:\caminho\ate\o\projeto` pelo caminho onde você clonou o repositório.
+
 O Power BI então só precisa apontar para `saida/base_consolidada.csv` e atualizar.
+
+## Licença
+
+MIT — veja [LICENSE](./LICENSE).

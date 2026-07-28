@@ -1,0 +1,13 @@
+# Planilhas de clientes e resultados gerados — NUNCA versionar.
+# Estas pastas recebem dados reais quando o ETL roda para um cliente.
+# Para recriar os exemplos de teste: python gerar_exemplos.py
+entrada/*
+!entrada/.gitkeep
+saida/*
+!saida/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
