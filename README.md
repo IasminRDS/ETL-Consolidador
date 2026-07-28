@@ -88,6 +88,10 @@ Troque `C:\caminho\ate\o\projeto` pelo caminho onde você clonou o repositório.
 
 O Power BI então só precisa apontar para `saida/base_consolidada.csv` e atualizar.
 
-## Licença
+## 📄 Licença
 
 MIT — veja [LICENSE](./LICENSE).
+
+---
+
+Feito por **Iasmin Ribeiro de Souza** · [LinkedIn](https://www.linkedin.com/in/iasmin-ribeiro-de-souza-033536401) · [GitHub](https://github.com/IasminRDS)
