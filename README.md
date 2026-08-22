@@ -1,5 +1,11 @@
 # ETL Consolidador
 
+![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black)
+[![testes](https://github.com/IasminRDS/ETL-Consolidador/actions/workflows/ci.yml/badge.svg)](https://github.com/IasminRDS/ETL-Consolidador/actions/workflows/ci.yml)
+![License](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)
+
 Junta as planilhas soltas do cliente em **uma base única e limpa**, pronta para o
 Power BI.
 
@@ -75,6 +81,21 @@ decimal brasileiro, um em UTF-8 padrão americano, um cheio de `R$` e duplicatas
 e um que nem é planilha de vendas). Rodando o ETL em cima deles o resultado
 esperado é **105 linhas** e **R$ 22.632,70** — os mesmos números que o
 `gerar_exemplos.py` imprime ao criar os arquivos.
+
+## Testes
+
+```bash
+pip install pandas openpyxl
+python -m unittest -v          # 27 testes
+```
+
+Cada caso da tabela acima virou teste: número em formato brasileiro e
+americano no mesmo lote, as quatro formas de data mais o serial do Excel,
+os apelidos de coluna, e a detecção da linha de cabeçalho sob um título.
+O teste de ponta a ponta roda o pipeline inteiro sobre os arquivos que o
+`gerar_exemplos.py` cria e confere justamente os números prometidos aqui —
+**105 linhas** e **R$ 22.632,70** —, o que garante que o rodapé
+`TOTAL GERAL` continua sendo descartado e as duplicatas removidas.
 
 ## Colocando no automático
 
